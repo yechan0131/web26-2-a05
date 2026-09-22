@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>image_basic</title>
+</head>
+<body>
+    <h1>그림</h1>
+    <img src="Penguins.jpg" alt="팽귄" width="300">
+    <img src="Nothing" alt="그림 존재하지 않음" width="300">
+    <img src="https://i.namu.wiki/i/UmR-yfVXeUPCpXMSfdlknT0yuFtOvzum7hwULsXrs1GWQV5xcGE340UlIX0UJ5CaF6d9z8_KIXYNM8eErrBxqb2-RbmP9vfq8LH7Io8V4VwcG3xQE6p9B_z6b7uGWZELVSMu8Fq1gioClyws6fK5nA.svg" alt="네이버"  width="300">
+    <img src="https://i.namu.wiki/i/5niWeg9BAO9jxNsDsXSfUSrTHZ6j_-JYYjuXxanrPbMDtEVJy-Z_jbPbcLYi7Ak0mj6D2rGI9pYmqZkPYC2RwNs5-VBRVRzDr1MMRK4jccfyP5qwjKJz8e6s4-9NZYcutmKiMl2re-hyBvaADLCwqA.svg" alt="다음" width="300">
+    <hr>
+
+    <h1>음악 동영상</h1>
+    <h2>audio_basic</h2>
+    <audio src="Kalimba.mp3" controls="controls"></audio>
+
+    <!--- 웹 브라우저마다 지원하는 파일 확장자가 다른문제는 audio,video 태그 내부에 source태그를 입력해 해결-->
+
+    <h2>audio_source</h2>
+    <audio controls="controls">
+        <source src="Kalimba.mp3" type="audio/mp3">
+        <source src="Kalimba.ogg" type="audio/mp3">
+    </audio>
+
+    <h2>video_basic</h2>
+    <video controls="controls">
+        <source src="Wildlife.mp4" type="video/mp4">
+        <source src="Wildlife.webm" type="video/mp4">
+    </video>
+
+    <h2>video_poster</h2>
+    <video controls="controls" poster="naver.png">
+        <source src="Wildlife.mp4" type="video/mp4">
+        <source src="Wildlife.webm" type="video/mp4">
+    </video>
+    
+
+</body>
+</html>
