@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>후손 선택자와 자손 선택자</title>
+    <style>
+        /* #header h1{
+            color:red;
+        }
+        #section h1{
+            color:orange;
+        } */
+        /* 여기서 ,뒤에 태그만있으면 header부분만 적용되는게아니고 전체가 적용된다 */
+        /* #header h1,h2{color:blueviolet;} */
+        /* #header h1, #header2{color:aqua;} */
+
+        #header > h1{color:red;}
+        #section > h1{color:orange;}
+    </style>
+</head>
+<body>
+    <h3>후손 선택자 : 특정한 태그의 후손을 선택 (선택자A/선택자B)</h3><hr>
+    <div id="header">
+        <h1 class="title">Lorem ipsum dolor</h1>
+        <div id="nav">
+            <h1>Navigation</h1>
+            <h2>"header안의 h2 - CSS3 Selector Basic</h2>
+        </div>
+    </div>
+
+    <div id="section">
+        <h1 class="title">Lorem ipsum dolor</h1>
+        <h2>"section안의 h2 - CSS3 Selector Basic</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus omnis iusto placeat nostrum sequi in molestiae, reiciendis voluptate quis, dicta enim tenetur beatae consequuntur accusantium voluptatum? Quisquam amet eos autem?</p>
+    </div>
+    
+</body>
+</html>

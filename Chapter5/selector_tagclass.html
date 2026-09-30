@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 selector</title>
+    <style>
+        /* *{color:brown}
+        h1{color:red}
+        p{color:yellow} */
+
+        /* id = #으로 class = .으로 */
+        #header{
+            width: 800px; margin:0 auto;
+            background:red;
+        }
+        #wrap{
+            width: 800px; margin:0 auto;
+            overflow: hidden;
+        }
+        #aside{
+            width: 200px; float: left;
+            background:blue;
+        }
+        #content{
+            width: 600px; float: left;
+            background:green;
+        }
+        #rint{
+            color: firebrick;
+        }
+        .select{color:red;}
+
+        .header{background-color: blue;}
+        .item{color:red;}
+
+    </style>
+</head>
+<body>
+    <!-- id 여러개쓰는건 좋은 코드는 아님-->
+    <h2 id="rint">1. 전체 선택자</h2>
+    <h2 id="rint">2. 태그 선택자</h2>
+    <h2 id="rint">3. 아이디 선택자</h2>
+    <h2>4. id속성을 중복 사용하면 해당 id속성을 표시한 모든 태그에 스타일 적용됨.</h2>
+    <h2>5. 클래스 선택자</h2>
+    <hr>
+
+    <h1 class="header item">동해물과 백두산이~~</h1>
+
+    <ul>
+        <li class="select">사과</li>
+        <li>바나나</li>
+        <li class="select">오렌지</li>
+        <li>감</li>
+    </ul>
+
+    <h1>제목 글자</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius molestiae tempore asperiores placeat aut ducimus corporis iusto! Dolores cum quia omnis laudantium praesentium nulla amet? Cumque illum consequatur commodi maxime.</p>
+
+
+   
+
+    <div id="header">
+        <h1>#header 태그</h1>
+    </div>
+    
+    <div id="aside">
+        <h1>#aside 태그</h1>
+    </div>
+
+    <div id="content">
+        <h1>#content 태그</h1>
+    </div>
+
+</body>
+</html>

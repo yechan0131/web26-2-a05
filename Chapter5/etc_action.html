@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>etc_action</title>
+    <style>
+        /* hover커서 올렸을때 / active클릭 했을때 */
+        h1:hover{color:red;}
+        h1:active{color:blue;}
+        
+        input:enabled{background-color: green;}
+        input:disabled{background-color: red;}
+        input:focus{background-color: orange;}
+    </style>
+</head>
+<body>
+    <h2>1. 반응 선택자</h2>
+    <h2>2. 상대 선택자</h2><hr>
+    <h1>반응 선택자</h1><hr>
+
+    <h2>사용 가능</h2>
+    <input enabled="enabled">
+
+    <h2>사용 불가능</h2>
+    <input disabled="disabled">
+</body>
+</html>
