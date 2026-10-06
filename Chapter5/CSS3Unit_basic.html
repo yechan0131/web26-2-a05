@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3단위</title>
+    
+    <style>
+        /* em단위 적용하기 배수를 나타내는 단위
+            1배   =   1em = 100%
+            1.5배 = 1.5em = 150%*/
+        /* p:nth-child(1){}
+        p:nth-child(2){font-size: 100%;}
+        p:nth-child(3){font-size: 150%;}
+        p:nth-child(4){font-size: 200%;} */
+
+        /* p:nth-child(1){}
+        p:nth-child(2){font-size: 1.0pm;}
+        p:nth-child(3){font-size: 2.0pm;}
+        p:nth-child(4){font-size: 3.0pm;} */
+
+        /* 4. px단위 적용하기: px단위는 크기를 절대적으로 지정함.
+            p태그의 기본 font-size속성이 16px 이므로 실행결과 같음. */
+        p:nth-child(1){}
+        p:nth-child(2){font-size: 16px;}
+        p:nth-child(3){font-size: 24px;}
+        p:nth-child(4){font-size: 32px;}
+
+        /* 색상 단위 */
+        h1{background-color:rgb(255, 132, 13)} /* rgb색상 */
+        h2{background-color:rgba(255, 0, 0, 0.5)}/*RGBA색상: 알파값은 투명도. 0완전투명, 1.0완전 불투명 상태 */
+        h3{background-color: #0094FF;}/* HEX코드: RGB색상 단위를 짧게 입력하는 방법. RGB색상조합을 16진수로 입력*/
+
+    </style>
+</head>
+    
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <hr>
+
+    <h1>CH05. CSS기초 : 선택자와 단위</h1>
+    <h2>CSS3단위</h2>
+    <h3>1. 키워드 단위 : W3C에서 미리 정의한 단어</h3>
+    <h3>2. 크기 단위</h3>
+    <h3>3. 색상 단위</h3>
+    <hr>
+
+    <h4></h4>
+    
+    
+</body>
+</html>
